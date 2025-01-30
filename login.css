@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.heading {
+    width: 42%;
+    height: 100vh;
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white; /* Ensure heading text is visible on background */
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.login-form input {
+    display: block;
+    width: calc(100% - 30px); /* Subtract padding from width */
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+    font-size: 16px; /* Slightly larger font */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+}
+
+.login-form input::placeholder {
+    color: #888;
+    font-style: italic;
+    transition: color 0.3s ease-in-out;
+}
+
+.login-form input:hover::placeholder {
+    color: neonblue;
+    text-shadow: 0 0 5px neonblue, 0 0 10px neonblue, 0 0 15px neonblue;
+}
+
+.login-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for hover effects */
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+p {
+    font-size: 18px;
+    color: white; /* Ensure paragraph text is visible on background */
+}
+
+h1 {
+    font-size: 36px;
+    color: white; /* Ensure heading text is visible on background */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
